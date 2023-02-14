@@ -2,6 +2,11 @@
 # DWM
 dwm is a dynamic window manager for X. It manages windows in tiled, monocle and floating layouts. All of the layouts can be applied dynamically, optimising the environment for the application in use and the task performed.
 
+# Preview
+<img src="https://github.com/motolla/dwm-rose/blob/main/assets/dwm-preview1.png">
+<img src="https://github.com/motolla/dwm-rose/blob/main/assets/dwm-preview2.png">
+<img src="https://github.com/motolla/dwm-rose/blob/main/assets/dwm-preview3.png"><br><br>
+
 # Keybind
 ```
 # Spawn Terminal (st)
