@@ -1,0 +1,18 @@
+#!/bin/sh
+
+# Audio
+pipewire &
+pipewire-pulse &
+
+# Compositor
+picom --experimental-backends &
+
+# Spawn Statusbar
+~/dot/dwm-6.4/autostart/bar &
+
+# Background
+feh --bg-fill /media/void/dot/wall/wallhaven-vmxmxl_1920x1080.png &
+
+# Update Info
+~/bin/update_info
+

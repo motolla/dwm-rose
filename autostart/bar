@@ -1,0 +1,54 @@
+#!/bin/bash
+
+# rose pine colors
+love=#eb6f92
+gold=#f6c177
+rose=#ebbcba
+pine=#31748f
+foam=#9ccfd8
+iris=#c4a7e7
+overlay=#26233a
+bg=#25233a
+subtle=#908caa
+fg=#e0def4
+
+interval=0
+
+wlan() {
+  interface='wlp0s20u2'
+  ssid=$(iw $interface link | grep 'SSID' | awk 'NR%1==0 {print $2}')
+
+  case "$(cat /sys/class/net/wl*/operstate 2>/dev/null)" in
+    up) printf "^c$rose^󰤨 $ssid^d^" ;;
+    down) printf "^c$subtle^󰤮 offline^d^" ;;
+  esac
+}
+
+audio() {
+  vol=$(pamixer --get-volume-human)
+  check_o=$(pactl list sinks | grep Active | awk '{print $3}')
+
+  case $check_o in
+    analog-output-speaker) echo "^c$foam^󰓃 $vol^d^" ;;
+    analog-output-headphones) echo "^c$foam^󰋋 $vol^d^" ;;
+  esac
+}
+
+ram() {
+  mem_total=$(free -m | awk 'NR%2==0 {print $2}')
+  mem_avail=$(free -m | awk 'NR%2==0 {print $7}')
+  mem_used=$(( $mem_total - $mem_avail ))
+  mem_usage=$(( $mem_used * 100 / $mem_total ))
+  if [ $mem_usage -ge 80 ]; then
+    printf "^c$love^󰘚 ${mem_usage}%%!"
+  else
+    printf "^c$pine^󰘚 ${mem_usage}%%"
+  fi
+}
+
+while true; do
+  interval=$((interval + 1))
+  xsetroot -name  " $(audio) $(ram) $(wlan) $(date +"^c$iris^󰃮 %a %d %B 󱑇 %I:%M %p")   "
+  sleep 1
+done
+

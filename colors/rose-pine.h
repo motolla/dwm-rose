@@ -1,0 +1,12 @@
+static const char bg0[]      = "#191724";
+static const char bg1[]      = "#1f1d2e";
+static const char bg2[]      = "#26233a";
+static const char fg0[]      = "#e0def4";
+static const char fg1[]      = "#6e6a86";
+static const char fg2[]      = "#908caa";
+static const char red[]      = "#eb6f92";
+static const char yellow[]   = "#f6c177";
+static const char rose[]     = "#ebbcba";
+static const char bluu[]     = "#31748f";
+static const char cyan[]     = "#9ccfd8";
+static const char purple[]   = "#c4a7e7";
