@@ -104,7 +104,6 @@ static const Key keys[] = {
 	{ MODKEY,	                      XK_Return, spawn,          {.v = termcmd } },
   { MODKEY,                       XK_bracketleft, spawn,     SHCMD("~/bin/volcon") },
   { MODKEY,                       XK_Print,  spawn,          SHCMD("~/bin/scrot") },
-  { ControlMask,                  XK_Print,  spawn,          SHCMD("~/bin/flamecrop") },
   // Programs: brightness //
 	{ 0,                            0x1008FF02, spawn,         {.v = ubright } },
 	{ 0,                            0x1008FF03, spawn,         {.v = dbright } },
