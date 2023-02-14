@@ -37,7 +37,7 @@ use this command if you want the autostart working
 ```
 git clone https://github.com/motolla/dwm-rose.git $HOME/dot/dwm
 ```
-or u can edit this [line](https://github.com/motolla/dwm-rose/blob/17aee8f7d94dd8e0b0ecd1b9ed730a830600a8bb/dwm.c#L1525) to directory you cloned the repo
+or u can edit this [line](https://github.com/motolla/dwm-rose/blob/35f761be2e0588093242eaeb406780a52a590b5e/dwm.c#L1525) to directory you cloned the repo
 + Build & Install
 ```
 ./dwmclean
