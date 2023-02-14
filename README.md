@@ -5,7 +5,7 @@ dwm is a dynamic window manager for X. It manages windows in tiled, monocle and 
 # Preview
 <img src="https://github.com/motolla/dwm-rose/blob/main/assets/dwm-preview1.png">
 <img src="https://github.com/motolla/dwm-rose/blob/main/assets/dwm-preview2.png">
-<img src="https://github.com/motolla/dwm-rose/blob/main/assets/dwm-preview3.png"><br><br>
+<img src="https://github.com/motolla/dwm-rose/blob/main/assets/dwm-preview3.png"><br>
 
 # Keybind
 ```
@@ -25,9 +25,8 @@ Alt + Shift + q
 xbps-install libXft-devel libX11-devel libXinerama-devel
 ```
 + Font
-```
 [Iosevka-Mayukai-Sonata](https://github.com/Iosevka-Mayukai/Iosevka-Mayukai)
-```
+Symbols Nerd Font
 
 # Installation
 + Clone Repo
