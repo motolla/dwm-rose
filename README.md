@@ -25,9 +25,10 @@ Alt + Shift + q
 xbps-install libXft-devel libX11-devel libXinerama-devel
 ```
 + Font
-[Iosevka-Mayukai-Sonata](https://github.com/Iosevka-Mayukai/Iosevka-Mayukai)
 
-Symbols Nerd Font
++ [Iosevka-Mayukai-Sonata](https://github.com/Iosevka-Mayukai/Iosevka-Mayukai)
+
++ Symbols Nerd Font
 
 # Installation
 + Clone Repo
