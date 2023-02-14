@@ -1521,8 +1521,8 @@ run(void)
 
 void
 runAutostart(void) {
-  system("cd ~/dot/dwm-6.4/autostart; ./autostart_blocking");
-  system("cd ~/dot/dwm-6.4/autostart; ./autostart &");
+  system("cd ~/dot/dwm/autostart; ./autostart_blocking");
+  system("cd ~/dot/dwm/autostart; ./autostart &");
 }
 
   void
